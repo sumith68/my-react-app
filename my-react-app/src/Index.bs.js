@@ -3,12 +3,11 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
+var Counter$ReactHooksTemplate = require("./Counter.bs.js");
 
 import './app.css'
 ;
 
-ReactDOMRe.renderToElementWithId(React.createElement("h1", {
-          className: "text-center"
-        }, "Hello, world!"), "app");
+ReactDOMRe.renderToElementWithId(React.createElement(Counter$ReactHooksTemplate.make, { }), "app");
 
 /*  Not a pure module */
