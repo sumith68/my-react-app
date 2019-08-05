@@ -4,6 +4,11 @@
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 
-ReactDOMRe.renderToElementWithId(React.createElement("h1", undefined, "Hello, world!"), "app");
+import './app.css'
+;
+
+ReactDOMRe.renderToElementWithId(React.createElement("h1", {
+          className: "text-center"
+        }, "Hello, world!"), "app");
 
 /*  Not a pure module */
