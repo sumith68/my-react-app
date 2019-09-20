@@ -3,11 +3,14 @@
 
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
-var Counter$ReactHooksTemplate = require("./Counter.bs.js");
+var Example_TimerInteraction$ReactHooksTemplate = require("./Example_TimerInteraction.bs.js");
 
 import './app.css'
 ;
 
-ReactDOMRe.renderToElementWithId(React.createElement(Counter$ReactHooksTemplate.make, { }), "app");
+import './custom.css'
+;
+
+ReactDOMRe.renderToElementWithId(React.createElement(Example_TimerInteraction$ReactHooksTemplate.make, { }), "app");
 
 /*  Not a pure module */

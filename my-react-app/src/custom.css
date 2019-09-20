@@ -1,0 +1,13 @@
+:root {
+  --delete-countdown: 10s;
+}
+
+.animate-delete-countdown {
+  animation-name: delete-countdown;
+  animation-duration: var(--delete-countdown);
+}
+
+@keyframes delete-countdown {
+  from {width: 100%}
+  to {width: 0%}
+}
